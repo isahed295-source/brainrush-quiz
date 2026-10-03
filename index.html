@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uncommon Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <div class="topbar">
+    <div class="brand">🧠 Uncommon Quiz</div>
+    <div class="coins">🪙 <span id="coins">0</span></div>
+  </div>
+
+  <section id="home" class="screen active">
+    <div class="hero">
+      <div class="brain">🧠</div>
+      <h1>Think Fast.</h1>
+      <p>Uncommon questions. Only 10 seconds.</p>
+      <div class="lang">
+        <button class="langBtn selected" data-lang="bn">বাংলা</button>
+        <button class="langBtn" data-lang="en">English</button>
+      </div>
+      <button id="playBtn" class="primary">PLAY</button>
+      <p class="tiny">Each game has 4 questions.</p>
+    </div>
+  </section>
+
+  <section id="ad" class="screen">
+    <div class="card">
+      <span class="adtag">ADVERTISEMENT</span>
+      <h2>Ad space</h2>
+      <p>Real ad-network code will be placed here after publisher approval.</p>
+      <div class="adbox">AD</div>
+      <button id="startAfterAd" class="primary">CONTINUE</button>
+    </div>
+  </section>
+
+  <section id="quiz" class="screen">
+    <div class="quizhead">
+      <span id="qCount">1 / 4</span>
+      <div class="timer" id="timer">10</div>
+    </div>
+    <div class="questionCard">
+      <p class="label">QUESTION</p>
+      <h2 id="question">Loading...</h2>
+      <p class="hint">উত্তর মনে মনে বের করুন। টাইপ করার দরকার নেই।</p>
+    </div>
+    <button id="nextBtn" class="secondary">Skip / Next</button>
+  </section>
+
+  <section id="endAd" class="screen">
+    <div class="card">
+      <span class="adtag">ADVERTISEMENT</span>
+      <h2>Game Complete</h2>
+      <p>Thanks for playing.</p>
+      <div class="adbox">AD</div>
+      <button id="homeBtn" class="primary">BACK TO HOME</button>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
